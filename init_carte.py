@@ -6,6 +6,7 @@ from Phidget22.PhidgetException import *
 from Phidget22.Phidget import *
 from Phidget22.Net import *
 
+#declaration des 2 cartes et des 4 voies par jauges (8 au total)
 ch1  = VoltageRatioInput()
 ch10 = VoltageRatioInput()
 ch11 = VoltageRatioInput()
@@ -18,7 +19,7 @@ ch22 = VoltageRatioInput()
 ch23 = VoltageRatioInput()
 
 def init ():
-	
+	#declaration des cartes avec numero de serie le gain de 1, internal de temps 8 millisecondes
 	ch1.setDeviceSerialNumber(513024)
 	ch1.openWaitForAttachment(5000)
 	ch1.setBridgeGain(1)
@@ -33,9 +34,11 @@ def init ():
 	ch2.setBridgeEnabled(1)
 	ch2.close()
 	time.sleep(0.5)
+	#declaration de la premiere voie de la carte 513024
 	ch10.setChannel(0)
 	ch10.setDeviceSerialNumber(513024)
 	ch10.openWaitForAttachment(5000)
+	#declaration de la premiere voie de la carte 513024
 	ch11.setChannel(1)
 	ch11.setDeviceSerialNumber(513024)
 	ch11.openWaitForAttachment(5000)
