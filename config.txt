@@ -1,0 +1,2 @@
+#t°,HR,temps acquisition,nbre jauges,nbre lvdt
+25,30,10,1,0
