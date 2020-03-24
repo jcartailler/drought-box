@@ -68,8 +68,11 @@ def init ():
 	
 def lecture(fichier, n, t1):
 	if n==1:
+		#ouverture de le voie
 		ch10.open()
+		#lecture de la voie
 		m11=ch10.getVoltageRatio()
+		#attente 0.1s
 		time.sleep(0.1)
 		m12=ch10.getVoltageRatio()
 		time.sleep(0.1)
@@ -78,11 +81,14 @@ def lecture(fichier, n, t1):
 		m14=ch10.getVoltageRatio()
 		time.sleep(0.1)
 		m15=ch10.getVoltageRatio()
+		#moyenne sur 5 valeurs
 		m1=(m11+m12+m13+m14+m15)/5	
+		#enregistrement sur le fichier
 		file=open("/var/www/html/resultats/C_"+fichier,"a")
 		f= csv.writer(file)
 		f.writerow([t1, m1])
 		file.close()
+		#affichage à l'ecran du temps et de la mesure
 		print("temps= %.2f" %t1,  "mesure=",m1)
 	if n==2:
 		ch10.open()
