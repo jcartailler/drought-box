@@ -11,15 +11,18 @@ import init_carte
 
 def init():
     fichier=time.strftime("%Y%m%d_%H%M%S"+".csv")
-    z=input("Rentrer le nom de l'espece:") #demande Ã  l'utilisateur en quelle valeur faire la moyenne des conductances
+    #demande à l'utilisateur de rentrer l'espece de l'echantillon pour l'avoir dans le nom du fichier
+    z=input("Rentrer le nom de l'espece:") 
     fichier=z+"_"+fichier
     fichier2=fichier
     file=open("/var/www/html/resultats/C_"+fichier,"w")
     file2=open("/var/www/html/resultats/C_temp_"+fichier,"w")
     file.close()
     file2.close()
-    config = open("config.txt","r") #ouvert le fichier configuration
+    #ouverture du fichier de configuration pour connaitre les parametres de l'experience
+    config = open("config.txt","r") 
     reader = config.read() #lit le fichier en .txt
+    #fait des listes avec la t°C, le temps, l'HR, le nbre de jauges, le nbre de LVDT
     list_Temp=list()
     list_temps=list()
     list_HR=list()
