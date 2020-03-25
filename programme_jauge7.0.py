@@ -93,12 +93,17 @@ def init():
         LVDT=int(LVDT)    
         
         if LVDT==0:
+            #si pas de capteur LVDT
             ser=consigne.parametrage_serie()
+            #envoi consigne temperature
             consigne.envoi_consigne(Consigne, ser)   
             ser=consigneHR.parametrage_serie()
+            #envoi consigne HR
             consigneHR.envoi_consigne(HR, ser)
+            #parametrage de la carte 1046
             init_carte.init()
             #time.sleep(2)
+            #affichage parametres
             print("Temp=",Consigne)
             time.sleep(1)
             print("HR=",HR)    
@@ -117,7 +122,9 @@ def init():
                        t3=time.time()-t2
                 t1=time.time() -t0
                 t2=time.time()
+                #lecture et enregistrement donnee jauges
                 init_carte.lecture(fichier, Nb_jauges, t1)
+                #lecture et enregistrement donnee temperature / HR
                 consigne.boucle(fichier2, t0, ser)
              
                         
