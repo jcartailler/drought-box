@@ -37,7 +37,7 @@ entre chaque mesure, faire des pauses et arrêter l’expérience, le deuxième 
 configuration et peut même réaliser des rampes de températures et d’humidité relative.
 Le dispositif permet de mettre 8 branches en parallèle, vu que les cinétiques sont assez longues et cela permet d’avoir des répétitions 
 dans les mêmes conditions.
-https://user-images.githubusercontent.com/62540471/77655310-86fe7780-6f72-11ea-9544-c7b5917dc7ed.png
+![alt tag](https://user-images.githubusercontent.com/62540471/77655310-86fe7780-6f72-11ea-9544-c7b5917dc7ed.png)
 
  
 Figure 1 : Schéma du dispositif.
