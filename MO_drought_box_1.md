@@ -105,4 +105,4 @@ en eau de l’air de la box.
 Figure 2 : Placement des jauges de contrainte
 
 
-  ![alt tag]https://user-images.githubusercontent.com/62540471/77656162-c1b4df80-6f73-11ea-8974-539dc7abb183.png)
+  ![alt tag](https://user-images.githubusercontent.com/62540471/77656162-c1b4df80-6f73-11ea-8974-539dc7abb183.png)
