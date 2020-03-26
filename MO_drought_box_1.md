@@ -101,7 +101,7 @@ capteur.
 Pour le programme des températures, il ne génère qu’un fichier image avec les cinétiques de température, humidité relative et la teneur
 en eau de l’air de la box.
 
- 
+ ![alt tag](https://user-images.githubusercontent.com/62540471/77655649-ff653880-6f72-11ea-979a-e6711fffa688.png)
 Figure 2 : Placement des jauges de contrainte
 
 
