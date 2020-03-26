@@ -105,5 +105,5 @@ en eau de l’air de la box.
 Figure 2 : Placement des jauges de contrainte
 
 
- 
+  ![alt tag](https://user-images.githubusercontent.com/62540471/77655828-3dfaf300-6f73-11ea-912c-ff681dffd2e4.png)
 Figure 3 : Bureau Raspberry Pi
