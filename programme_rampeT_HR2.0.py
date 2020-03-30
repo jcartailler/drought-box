@@ -7,14 +7,14 @@ import consigneHR
 import init_carte
 
 fichier=time.strftime("%Y%m%d_%H%M%S"+".csv")
-z=input("Rentrer le nom de l'espece:") #demande Ã  l'utilisateur en quelle valeur faire la moyenne des conductances
+z=input("Rentrer le nom de l'espece:") #demande Ã  l'utilisateur le nom de espece de echantillon
 fichier=z+"_"+fichier
 fichier2=fichier
 file=open("/var/www/html/resultats/C_"+fichier,"w")
 file2=open("/var/www/html/resultats/C_temp_"+fichier,"w")
 file.close()
 file2.close()
-rampe = open("rampeT_HR.txt","r") #ouvert le fichier rampe
+rampe = open("rampeT_HR.txt","r") #ouvert le fichier rampe qui contient les temperature et HR de chacune des rampes
 reader = rampe.read() #lit le fichier en .txt
 list_Temp=list()
 list_temps=list()
@@ -52,7 +52,7 @@ nbj=-1
 ta=-1
 
 while nbj<0 :
-    nbj=input("Combien de jauges sont utilisés:")
+    nbj=input("Combien de jauges sont utilisés:") #demande à l'utilisateur combien de jauges sont utiliser (il faut utiliser les jauges dans l'ordre)
     try:
         nbj=int(nbj)
     except ValueError:
@@ -68,7 +68,7 @@ while nbj<0 :
         nbj=-1
 
 while ta<0 :
-    ta=input("Quel temps d'acquisition voulez-vous (en seconde) ?")
+    ta=input("Quel temps d'acquisition voulez-vous (en seconde) ?")# demande à l'utilisateur le temps entre deux mesures
     try:
         ta=int(ta)
     except ValueError:
